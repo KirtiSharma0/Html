@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          h1 {
+            color: rgb(7, 9, 145);
+             padding: 34px;
+             margin: 24px auto;
+             margin-left: 20%;
+             margin-top: 0%;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+           h2 {
+             color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+          body{
+             background-image: url('form.jpg');
+             background-position: center;
+             background-repeat: repeat ;
+             background-size: contain;
+          }
+
+          .submit,.cancel,.edit{
+            background-color: rgb(231, 235, 11);
+            padding: 9px;
+            font-size: 13px;
+           }
+        img{
+            margin-left: 40%;
+        }
+           
+    </style>
+</head>
+<body>
+    <img src="greenlogo.jpeg" alt="" width="150px" height="150px" id="logo">
+    <h1>MEDICAL FORM FOR ANALYSIS </h1>  
+     
+    <form action="">
+    <fieldset>
+        <legend> <h2>Patient Details</h2> </legend>
+        <p>Name : <input type="text" placeholder="Enter name"></p>
+        <p>Gender : <input type="radio" name="gender">Male  <input type="radio" name="gender">Female </p>
+        <p>Blood Group : <input type="text"></p>
+        <p>Age : <input type="number" ></p>
+        <P>Body Weight : <input type="number" placeholder="00"></P>
+        <p>Symptoms suffering from :  
+            <select name="Disease" id="Disease">
+                <option value="select">select</option>
+                <option value="Abdomen pain, night sweats and fever">Abdomen pain, night sweats and fever</option>
+                <option value="Feeling like to vomit and lack of appetite">Feeling like to vomit and lack of appetite</option>
+                <option value="Dark urine, yellowing of skin & eyes and pale stools">Dark urine and pale stools</option>
+                <option value="Bloating, burning stomach pain, weight loss and Indigestion">Bloating and Indigestion</option>
+                <option value="Sustained fever, constipation, rash and enlarged liver">Sustained fever, constipation, rash and enlarged liver</option>
+                <option value="Increased thirst, frequent urination, blurred vision and numbness in hands">Increased thirst, frequent urination, blurred vision and numbness in hands</option>
+                <option value="Cough, running nose and sneezing">Cough, running nose and sneezing</option>
+                <option value="Dehydration, fever, fatigue and body ache">Dehydration, fever, fatigue and body ache</option>
+                <option value="Dizziness, fainting and clammy pale skin">Dizziness, fainting and clammy pale skin</option>
+                <option value="Shortness of breath, cough often with phelgm, chest pain and fast heart rate">Shortness of breath and fast heart rate</option>
+             </select></p>
+
+        <p>How long has it been since ? <br><input type="radio" name="duration">2 months <input type="radio" name="duration">6 months 
+        <input type="radio" name="duration">More than 6 months</p>  
+        <p>Any known chronic disease happened in past time : <input type="radio" name="past">Yes <input type="radio" name="past">No</p>
+        <p>If yes :  <textarea name="Disease" id="Disease" cols="50" rows="5" placeholder="mention in detail"></textarea>  </p>
+        <p> Have you consult the doctor before ? <input type="radio" name="doctor" >YES <input type="radio" name="doctor">NO</p> 
+    </fieldset>
+
+ <fieldset>
+    <legend><h2>Contact Details</h2></legend>
+    <p>Patient's Phone Number : <input type="number"></p>
+    <p>Email id : <input type="text" placeholder="xyz@gmail.com">
+    </p>
+    <p>Address : <textarea name="address" id="address" cols="50" rows="5" placeholder="Please mention required area/street/landmark"></textarea></p>
+    <p>Guardian's Name : <input type="text"></p>
+    <p>Relation with patient : <input type="text"></p>
+    <p>Contact Number : <input type="number" ></p>
+    <p>Other contact details in case of emergency : <textarea name="Contact" id="contact" cols="50" rows="5" placeholder="Mention person's name , relation and contact number "></textarea></p>
+ </fieldset>
+
+ <pre>
+
+
+     <input type="button" value="submit" class="submit">                     <input type="button" value="cancel" class="cancel">                         <input type="button" value="edit" class="edit">
+   
+ </pre>
+
+    </form>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".submit").addEventListener("click", function () {
+                // You can add more validation logic here before redirecting
+                window.location.href = "medical3.html";
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+    }
+    div:hover{
+        background-color: red;
+        height: 300px;
+        width: 300px;
+        transition: 5s;
+        border-radius: 100%;
+        flex: content;
+        transform: rotate(360deg);
+    }
+    div::after{
+        background-color: rgb(197, 223, 53);
+        height: 200px;
+        width: 200px;
+        transition: 3s;
+          
+    }
+</style>
+<body>
+    <div> H </div>
+</body>
+</html>
